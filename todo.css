@@ -62,12 +62,18 @@ li{
     padding-top:1%;
     padding-bottom: 1%;
     text-align: center;
-    display: block;
-    vertical-align: text-bottom;
-    text-decoration: thr
+    display: inline-block;
+    vertical-align: -1;
+    font-size: 12;
 }
 .frame{
     margin-left:auto;
     margin-right:auto;
     max-width:436px;
+}
+.closer{
+    display: inline-block;
+    vertical-align: -1;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ca6262c9;
 }
