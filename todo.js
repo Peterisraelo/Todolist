@@ -11,20 +11,24 @@ function addnewtask(){
 
     //Creating div to house each list item
     var home= document.createElement("div");
+    home.className= "house";
 
     //Creating close button
     var close = document.createElement("p");
-    close.appendChild(document.createTextNode("X"));
+    close.appendChild(document.createTextNode("x"));
     close.className="closer";
 
 
-    
+    if(txt==""){
+        alert("You must type something");
+    }else{
     li.appendChild(document.createTextNode(txt));
     ul.appendChild(home);
     home.appendChild(li);
     home.appendChild(close);
 
     document.getElementById("additem").value="";
+    }
 
     close.onclick= function(){
         li.remove();
